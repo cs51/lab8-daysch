@@ -175,8 +175,8 @@ newswire event.
 ......................................................................*)
 
 (* .. *)
-let fnn = WEvent.add_listener newswire fakeNewsNetwork;;
-let bf = WEvent.add_listener newswire buzzFake;;
+let fnn  : WEvent.id = WEvent.add_listener newswire fakeNewsNetwork;;
+let bf : WEvent.id = WEvent.add_listener newswire buzzFake;;
 
 (* Here are some headlines to play with. *)
 
